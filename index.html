@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetas de cocina</title>
+    <title>Recetas para tu paladar</title>
 </head>
+
 <body>
     <header id="home">
-        <h1> COCINA FABULOSAS RECETAS CON MARGI</h1>
+        <h1> RECETAS PARA TU PALADAR</h1>
         <nav>
             <ul>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#recetario">Recetario</a></li>
+                <li><a href="#introduction">Introducción</a></li>
+                <li><a href="#recipes">Recetario</a></li>
                 <li><a href="#aboutUs">Sobre nosotros</a></li>
                 <li><a href="#form">Formulario de Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="introduccion">
+        <section id="introduction">
             <!-- Banner -->
             <img src="./Imagenes/banner_recetas_header.jpg" alt="Banner de recetas">
 
             <h3>Introducción</h3>
             <p>
-                Esta sencilla recopilación de recetas fue elaborado por Margi Xiques y busca darte ideas para preparar rapidas, económicas y deliciosas comidas para ti y toda tu familia, que les permitirá disfrutar de la cocina.
-                Tambien podrás encontrar platillos que te serviran para preparar en tus reuniones e impresionar a tus amigos.
-                Deseo que sea de mucha ayuda!!!
+                Bienvenidos a nuestro sitio web de recetas de cocina. Somos un equipo apasionado por el arte culinario y nos complace compartir nuestra pasión con ustedes. Aquí encontrarás una amplia variedad de deliciosas recetas, desde platos tradicionales hasta creaciones innovadoras, que te ayudarán a explorar y disfrutar de la gastronomía en todo su esplendor.
             </p> 
+            <p>
+                Nuestro objetivo es convertir la cocina en una experiencia emocionante y accesible para todos. Queremos inspirarte a cocinar, sin importar tu nivel de habilidad, y brindarte la confianza necesaria para experimentar en la cocina. Nos esforzamos por ofrecerte recetas claras y fáciles de seguir, acompañadas de útiles consejos y técnicas culinarias.
+            </p>
+            <p>
+                En nuestro sitio, encontrarás recetas para cada ocasión y preferencia, desde platos rápidos y saludables para el día a día, hasta elaboradas preparaciones para sorprender a tus invitados en eventos especiales. También nos enfocamos en adaptar nuestras recetas a diferentes dietas y restricciones alimentarias, para que todos puedan disfrutar de la buena comida sin complicaciones.
+            </p>
+            <p>
+                Nos alegra que hayas encontrado nuestro sitio y esperamos que disfrutes navegando por nuestras recetas y recursos. ¡Anímate a explorar, experimentar y saborear nuevas experiencias culinarias con nosotros!
+            </p>
+            <p>¡Buen provecho!</p>
             <a href="#home">Regresar al home</a>
         </section>
-        <!-- Receipt Table -->
-        <section id="recetario">
+        
+        <section id="recipes">
             <h3>Recetario</h3>
             <table>
                 <thead>
@@ -165,27 +176,86 @@
                         </td>
                     </tr>
                 </tbody>
-            </table>
-            
+            </table> 
             <a href="#home">Regresar al home</a>
         </section>
         
-        <!-- About Us -->
         <section id="aboutUs">
             <h3>Sobre nosotros</h3>
-            <p>proando </p>
+            <p>
+                Nuestro equipo está formado por aficionados a la cocina y amantes de la comida de diversas partes del mundo. Cada miembro aporta su experiencia y conocimiento culinario para brindarte una amplia gama de recetas auténticas y sabrosas. Nos encanta explorar diferentes culturas y tradiciones culinarias, y nos emociona compartir esos descubrimientos contigo.
+            </p>
+            <address>
+                <strong>Nuestra dirección es:</strong>
+                <span>Avenida las rocas # 34 - 15,</span>
+                <span>Cartagena, Colombia</span>
+            </address>
+            <figure>
+                <blockquote cite="https://www.superprof.es/blog/citas-cocina/">
+                    <p>La gastronomía es el arte de usar los alimentos para crear felicidad.</p>
+                </blockquote>
+                <figcaption>-Theodore Zeldin, historiador y filósofo inglés </figcaption>
+            </figure>
+
             <a href="#home">Regresar al home</a>
         </section>
-        <!-- Contact Form -->
+        
         <section id="form">
             <h3>Formulario de Contacto</h3>
+            <form>
+                <fieldset>
+                    <label for="nameandlastname">Nombre y Apellido</label>
+                    <br>
+                    <input type="text" id="nameandlastname" required>
+                    <br>
+                    <br>
+                    <label for="email">Correo Electrónico</label>
+                    <br>
+                    <input type="email" id="email"required placeholder="email@dominio.com">
+                    <br>
+                    <br>
+                    <label for="phone">Teléfono</label>
+                    <br>
+                    <input type="tel" id="phone" required placeholder="(xx) xxx xxxxxxx">
+                    <br>
+                    <br>
+                    <label for="message">Mensaje</label>
+                    <br>
+                    <textarea id="message" cols="30" rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contáctemos?</legend>
+                    <input type="radio" id="radio-email" name="contact" value="email">
+                    <label for="radio-email">Email</label>
+                    <br>
+                    <input type="radio" id="radio-phone" name="contact" value="phone">
+                    <label for="radio-phone">Teléfono</label>
+                    <br>
+                    <input type="radio" id="radio-whatsapp" name="contact" value="whatsApp">
+                    <label for="radio-whatsapp">WhatsApp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>¿En qué horario prefiere ser contactado?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <input type="checkbox" id="checkbox" checked>
+                <label for="checkbox">¿Le gustaría recibir novedades sobre nuestras recetas?</label>
+                <br>
+                <br>
+                <button type="submit">Enviar formulario</button>
+            </form>
+            <br>
             <a href="#home">Regresar al home</a>
         </section>
     </main>
    
     <footer>
-        <p >&copy; Copyright Cocinando con Margi - 2023</p>
-    </footer>
-    
+        <p >&copy; Copyright Recetas a tu Paladar - 2023</p>
+    </footer> 
 </body>
 </html>
